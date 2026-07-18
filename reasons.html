@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Why I Love You - Happy Birthday ANAND ❤️</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Floating Animations -->
+    <div class="floating-container">
+        <div class="hearts"></div>
+        <div class="sparkles"></div>
+    </div>
+
+    <!-- Music Player -->
+    <div class="music-player" id="music-player">
+        <button class="music-toggle" id="music-toggle">
+            <span class="music-icon">🎵</span>
+        </button>
+        <div class="music-controls" id="music-controls">
+            <button class="control-btn" id="play-btn">▶️</button>
+            <input type="range" class="volume-slider" id="volume-slider" min="0" max="100" value="50">
+        </div>
+        <audio id="background-music" loop autoplay>
+            <source src="music\Humsafar Ringtone Download Male.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="nav-bar">
+        <a href="index.html" class="nav-link">🏠 Home</a>
+        <a href="gallery.html" class="nav-link">📸 Gallery</a>
+        <a href="timeline.html" class="nav-link">💕 Timeline</a>
+        <a href="reasons.html" class="nav-link active">❤️ Reasons</a>
+        <a href="cake.html" class="nav-link">🎂 Cake</a>
+    </nav>
+
+    <!-- Reasons Section -->
+    <section id="reasons" class="reasons page-section">
+        <div class="section-header">
+            <h2>Reasons I Love You</h2>
+            <p>Just a few of the infinite reasons</p>
+        </div>
+        <div class="reasons-grid" id="reasons-grid">
+            <!-- Reasons will be dynamically added by JavaScript -->
+        </div>
+        
+        <!-- Navigation Buttons -->
+        <div class="nav-section-buttons">
+            <a href="timeline.html" class="nav-button secondary">
+                <span>← Back to Timeline</span>
+            </a>
+            <a href="cake.html" class="nav-button primary">
+                <span>Make A Wish →</span>
+            </a>
+        </div>
+    </section>
+
+    <script src="reasons.js"></script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>I Love You Forever - Happy Birthday ANAND ❤️</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Floating Animations -->
+    <div class="floating-container">
+        <div class="hearts"></div>
+        <div class="sparkles"></div>
+        <div class="particles"></div>
+        <div class="rose-petals"></div>
+    </div>
+
+    <!-- Music Player -->
+    <div class="music-player" id="music-player">
+        <button class="music-toggle" id="music-toggle">
+            <span class="music-icon">🎵</span>
+        </button>
+        <div class="music-controls" id="music-controls">
+            <button class="control-btn" id="play-btn">▶️</button>
+            <input type="range" class="volume-slider" id="volume-slider" min="0" max="100" value="50">
+        </div>
+        <audio id="background-music" loop autoplay>
+            <source src="music\Soulmate Song Bgm.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="nav-bar">
+        <a href="index.html" class="nav-link">🏠 Home</a>
+        <a href="letter.html" class="nav-link">💌 Letter</a>
+        <a href="gift.html" class="nav-link">🎁 Gift</a>
+        <a href="final.html" class="nav-link active">💕 Final</a>
+    </nav>
+
+    <!-- Final Message Section -->
+    <section id="final-message" class="final-message page-section">
+        <div class="final-content">
+            <h1 id="final-title">I Love You Forever ❤️</h1>
+            <h2 id="final-subtitle">Happy Birthday My King ANAND 👑</h2>
+            <div class="final-hearts">
+                <span class="heart">❤️</span>
+                <span class="heart">❤️</span>
+                <span class="heart">❤️</span>
+            </div>
+
+            <!-- Navigation Button -->
+            <div class="nav-section-buttons">
+                <a href="gift.html" class="nav-button secondary">
+                    <span>← Back to Gift</span>
+                </a>
+                <a href="index.html" class="nav-button primary">
+                    <span>🏠 Back to Home</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Balloons -->
+    <div class="balloons-container" id="balloons"></div>
+
+    <!-- Fireworks Canvas -->
+    <canvas id="fireworks-canvas" class="fireworks-canvas"></canvas>
+
+    <!-- Confetti -->
+    <div class="confetti-container" id="confetti"></div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>Made with ❤️ by <span id="footer-name">NIRAL</span></p>
+    </footer>
+
+    <script src="final.js"></script>
+</body>
+
+</html>

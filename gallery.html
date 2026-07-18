@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Memories - Happy Birthday ANAND ❤️</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Floating Animations -->
+    <div class="floating-container">
+        <div class="hearts"></div>
+        <div class="sparkles"></div>
+    </div>
+
+    <!-- Music Player -->
+    <div class="music-player" id="music-player">
+        <button class="music-toggle" id="music-toggle">
+            <span class="music-icon">🎵</span>
+        </button>
+        <div class="music-controls" id="music-controls">
+            <button class="control-btn" id="play-btn">▶️</button>
+            <input type="range" class="volume-slider" id="volume-slider" min="0" max="100" value="50">
+        </div>
+        <audio id="background-music" loop autoplay>
+            <source src="music\``````````````````````````````.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="nav-bar">
+        <a href="index.html" class="nav-link">🏠 Home</a>
+        <a href="gallery.html" class="nav-link active">📸 Gallery</a>
+        <a href="timeline.html" class="nav-link">💕 Timeline</a>
+        <a href="reasons.html" class="nav-link">❤️ Reasons</a>
+        <a href="cake.html" class="nav-link">🎂 Cake</a>
+    </nav>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery page-section">
+        <div class="section-header">
+            <h2>Our Beautiful Memories</h2>
+            <p>Every picture tells our love story</p>
+        </div>
+        <div class="gallery-container">
+            <button class="gallery-nav prev" id="gallery-prev">❮</button>
+            <div class="gallery-slider" id="gallery-slider">
+                <!-- Photos will be dynamically added by JavaScript -->
+            </div>
+            <button class="gallery-nav next" id="gallery-next">❯</button>
+        </div>
+        <div class="gallery-dots" id="gallery-dots"></div>
+
+        <!-- Next Button -->
+        <div class="next-section">
+            <a href="timeline.html" class="next-button">
+                <span>Next: Our Love Journey →</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Photo Modal -->
+    <div class="photo-modal" id="photo-modal">
+        <button class="modal-close" id="modal-close">✕</button>
+        <img src="" alt="Fullscreen Photo" class="modal-image" id="modal-image">
+    </div>
+
+    <script src="gallery.js"></script>
+</body>
+
+</html>

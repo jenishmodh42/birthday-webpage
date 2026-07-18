@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Make A Wish - Happy Birthday ANAND ❤️</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Floating Animations -->
+    <div class="floating-container">
+        <div class="hearts"></div>
+        <div class="sparkles"></div>
+    </div>
+
+    <!-- Music Player -->
+    <div class="music-player" id="music-player">
+        <button class="music-toggle" id="music-toggle">
+            <span class="music-icon">🎵</span>
+        </button>
+        <div class="music-controls" id="music-controls">
+            <button class="control-btn" id="play-btn">▶️</button>
+            <input type="range" class="volume-slider" id="volume-slider" min="0" max="100" value="50">
+        </div>
+        <audio id="background-music" loop autoplay>
+            <source src="music\wavemaster-happy-birthday-155461.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="nav-bar">
+        <a href="index.html" class="nav-link">🏠 Home</a>
+        <a href="gallery.html" class="nav-link">📸 Gallery</a>
+        <a href="timeline.html" class="nav-link">💕 Timeline</a>
+        <a href="reasons.html" class="nav-link">❤️ Reasons</a>
+        <a href="cake.html" class="nav-link active">🎂 Cake</a>
+    </nav>
+
+    <!-- Cake Section -->
+    <section id="cake" class="cake page-section">
+        <div class="section-header">
+            <h2>Make A Wish</h2>
+            <p>Blow the candles and make your wish come true</p>
+        </div>
+        <div class="cake-container">
+            <div class="cake-3d">
+                <div class="cake-top">
+                    <div class="candle-container">
+                        <div class="candle" id="candle1">
+                            <div class="flame" id="flame1"></div>
+                        </div>
+                        <div class="candle" id="candle2">
+                            <div class="flame" id="flame2"></div>
+                        </div>
+                        <div class="candle" id="candle3">
+                            <div class="flame" id="flame3"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cake-middle"></div>
+                <div class="cake-bottom">
+                    <div class="candle-wish-card" id="candle-wish-card">
+                        <h3>Close your eyes... &#10024;</h3>
+                        <p>Make a wish from the bottom of your heart.</p>
+                        <p>May every dream you dream today come true,</p>
+                        <p>may every smile stay forever,</p>
+                        <p>and may our love grow stronger with every passing year.</p>
+                        <p><strong>Happy Birthday, My Love! &#10084;&#65039;</strong></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button class="blow-btn" id="blow-btn">
+            <span>🌬️ Blow Candles</span>
+        </button>
+        
+        <div class="cake-memory-panel" id="cake-memory-panel" hidden>
+            <div class="cake-photo-slider" id="cake-photo-slider" aria-label="Birthday memories slideshow">
+                <img src="images/photo 15.jpeg" alt="Birthday memory 1" class="cake-slide active">
+                <img src="images/photo 16.jpeg" alt="Birthday memory 2" class="cake-slide">
+                <img src="images/photo 17.jpeg" alt="Birthday memory 3" class="cake-slide">
+                <img src="images/photo 18.jpeg" alt="Birthday memory 3" class="cake-slide">
+                <img src="images/photo 19.jpeg" alt="Birthday memory 3" class="cake-slide">
+                <img src="images/photo 20.jpeg" alt="Birthday memory 3" class="cake-slide">
+            </div>
+        </div>
+
+        <!-- Navigation Buttons -->
+        <div class="nav-section-buttons">
+            <a href="reasons.html" class="nav-button secondary">
+                <span>← Back to Reasons</span>
+            </a>
+            <a href="letter.html" class="nav-button primary" id="next-to-letter" style="display: none;">
+                <span>Read My Letter →</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Fireworks Canvas -->
+    <canvas id="fireworks-canvas" class="fireworks-canvas"></canvas>
+
+    <!-- Confetti -->
+    <div class="confetti-container" id="confetti"></div>
+
+    <script src="cake.js"></script>
+</body>
+</html>

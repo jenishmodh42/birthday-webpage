@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Letter For You - Happy Birthday ANAND ❤️</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Floating Animations -->
+    <div class="floating-container">
+        <div class="hearts"></div>
+        <div class="sparkles"></div>
+    </div>
+
+    <!-- Music Player -->
+    <div class="music-player" id="music-player">
+        <button class="music-toggle" id="music-toggle">
+            <span class="music-icon">🎵</span>
+        </button>
+        <div class="music-controls" id="music-controls">
+            <button class="control-btn" id="play-btn">▶️</button>
+            <input type="range" class="volume-slider" id="volume-slider" min="0" max="100" value="50">
+        </div>
+        <audio id="background-music" loop autoplay>
+            <source src="music\kaise_hua_instrumental.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="nav-bar">
+        <a href="index.html" class="nav-link">🏠 Home</a>
+        <a href="letter.html" class="nav-link active">💌 Letter</a>
+        <a href="gift.html" class="nav-link">🎁 Gift</a>
+        <a href="final.html" class="nav-link">💕 Final</a>
+    </nav>
+
+    <!-- Love Letter Section -->
+    <section id="love-letter" class="love-letter page-section">
+        <div class="section-header">
+            <h2>A Letter For You</h2>
+            <p>From my heart to yours</p>
+        </div>
+        <div class="letter-container">
+            <div class="letter-paper">
+                <div class="letter-content" id="letter-content">
+                    <!-- Letter text will be typed by JavaScript -->
+                </div>
+                <div class="letter-signature" id="letter-signature"></div>
+            </div>
+        </div>
+
+        <!-- Navigation Buttons -->
+        <div class="nav-section-buttons">
+            <a href="cake.html" class="nav-button secondary">
+                <span>← Back to Cake</span>
+            </a>
+            <a href="gift.html" class="nav-button primary">
+                <span>Open Your Gift →</span>
+            </a>
+        </div>
+    </section>
+
+    <script src="letter.js"></script>
+</body>
+
+</html>

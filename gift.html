@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surprise Gift - Happy Birthday ANAND ❤️</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Floating Animations -->
+    <div class="floating-container">
+        <div class="hearts"></div>
+        <div class="sparkles"></div>
+    </div>
+
+    <!-- Music Player -->
+    <div class="music-player" id="music-player">
+        <button class="music-toggle" id="music-toggle">
+            <span class="music-icon">🎵</span>
+        </button>
+        <div class="music-controls" id="music-controls">
+            <button class="control-btn" id="play-btn">▶️</button>
+            <input type="range" class="volume-slider" id="volume-slider" min="0" max="100" value="50">
+        </div>
+        <audio id="background-music" loop autoplay>
+            <!-- <source src="music\o_maahi.mp3" type="audio/mpeg"> -->
+        </audio>
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="nav-bar">
+        <a href="index.html" class="nav-link">🏠 Home</a>
+        <a href="letter.html" class="nav-link">💌 Letter</a>
+        <a href="gift.html" class="nav-link active">🎁 Gift</a>
+        <a href="final.html" class="nav-link">💕 Final</a>
+    </nav>
+
+    <!-- Surprise Gift Section -->
+    <section id="surprise" class="surprise page-section">
+        <div class="section-header">
+            <h2>One More Surprise</h2>
+            <p>Open your special gift</p>
+        </div>
+        <div class="gift-container">
+            <div class="gift-box" id="gift-box">
+                <div class="gift-lid"></div>
+                <div class="gift-body"></div>
+                <div class="gift-ribbon"></div>
+            </div>
+        </div>
+        <button class="gift-btn" id="gift-btn">
+            <span>🎁 Open My Gift</span>
+        </button>
+        
+        <div class="gift-surprise-panel" id="gift-surprise-panel" aria-live="polite" hidden>
+            <div class="gift-photo-slider" id="gift-photo-slider" aria-label="Special memories slideshow">
+                <img src="images/photo 11.jpeg" alt="Special memory 1" class="gift-slide active">
+                <img src="images/photo 12.jpeg" alt="Special memory 2" class="gift-slide">
+                <img src="images/photo 13.jpeg" alt="Special memory 3" class="gift-slide">
+                <img src="images/photo 14.jpeg" alt="Special memory 3" class="gift-slide">
+            </div>
+            
+            <div class="voice-letter">
+                <p class="voice-kicker">Your birthday message is playing</p>
+                <button class="voice-replay-btn" id="voice-replay-btn" type="button">Listen Again</button>
+            </div>
+        </div>
+
+        <!-- Navigation Buttons -->
+        <div class="nav-section-buttons">
+            <a href="letter.html" class="nav-button secondary">
+                <span>← Back to Letter</span>
+            </a>
+            <a href="final.html" class="nav-button primary" id="next-to-final" style="display: none;">
+                <span>Final Message →</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Fireworks Canvas -->
+    <canvas id="fireworks-canvas" class="fireworks-canvas"></canvas>
+
+    <!-- Confetti -->
+    <div class="confetti-container" id="confetti"></div>
+
+    <script src="gift.js"></script>
+</body>
+</html>

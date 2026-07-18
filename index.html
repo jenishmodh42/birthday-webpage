@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday ANAND ❤️</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-content">
+            <div class="loading-heart">❤️</div>
+            <p class="loading-text">Loading Our Love Story...</p>
+        </div>
+    </div>
+
+    <!-- Floating Animations -->
+    <div class="floating-container">
+        <div class="hearts"></div>
+        <div class="sparkles"></div>
+        <div class="particles"></div>
+        <div class="rose-petals"></div>
+    </div>
+
+    <!-- Music Player -->
+    <div class="music-player" id="music-player">
+        <button class="music-toggle" id="music-toggle">
+            <span class="music-icon">🎵</span>
+        </button>
+        <div class="music-controls" id="music-controls">
+            <button class="control-btn" id="play-btn">▶️</button>
+            <input type="range" class="volume-slider" id="volume-slider" min="0" max="100" value="50">
+        </div>
+        <audio id="background-music" loop autoplay preload="auto">
+            <source src="music/Tum%20Ho%20Toh%20Subah%20Nayi%20Hai%20-%20Tum%20Ho%20Toh%20_%20Saiyaara.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-background"></div>
+        <div class="hero-content">
+            <div class="hero-image-container">
+                <img src="images/photo 3.jpeg" alt="Hero Image" class="hero-image" id="hero-img">
+            </div>
+            <h1 class="hero-title">Happy Birthday My Love ❤️</h1>
+            <p class="hero-subtitle">Every moment with you is my favorite memory.</p>
+            <p class="hero-date" id="current-date"></p>
+            
+            <!-- Navigation Buttons -->
+            <div class="nav-buttons">
+                <a href="gallery.html" class="nav-button">
+                    <span>📸 View Our Memories</span>
+                    <div class="button-glow"></div>
+                </a>
+                <a href="timeline.html" class="nav-button">
+                    <span>💕 Our Love Journey</span>
+                    <div class="button-glow"></div>
+                </a>
+                <a href="reasons.html" class="nav-button">
+                    <span>❤️ Why I Love You</span>
+                    <div class="button-glow"></div>
+                </a>
+                <a href="cake.html" class="nav-button primary">
+                    <span>🎂 Make A Wish</span>
+                    <div class="button-glow"></div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Balloons -->
+    <div class="balloons-container" id="balloons"></div>
+
+    <!-- Confetti -->
+    <div class="confetti-container" id="confetti"></div>
+
+    <script src="index.js"></script>
+</body>
+</html>
